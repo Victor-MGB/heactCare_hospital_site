@@ -1,0 +1,42 @@
+/* HomeHeroSection.css */
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 1s ease-out;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 2s ease-out;
+}
+
+.shadow-lg {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.shadow-md {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.object-cover {
+  object-fit: cover;
+  object-position: center;
+}

@@ -1,0 +1,71 @@
+/* Department.css */
+
+.department-section {
+    padding: 40px;
+    background-color: #f4f4f4;
+  }
+  
+  .department-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .department-header h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .department-header p {
+    font-size: 1.125rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .department-slider {
+    position: relative;
+  }
+  
+  .department-slide {
+    position: relative;
+  }
+  
+  .department-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .department-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7); /* Darken image for text readability */
+  }
+  
+  .department-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .department-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .department-text p {
+    font-size: 1rem;
+  }
+  
+  .skeleton-image {
+    width: 100%;
+    height: 500px;
+  }
+  
