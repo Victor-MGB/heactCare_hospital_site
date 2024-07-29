@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import Header from '../nav/Header';
+import Header from '../navbar/Header';
 import HeroSection from '../comonents/HeroSection';
 import Vaccination from '../comonents/Vaccination';
 import Doses from '../comonents/Doses';
 import Testimonial from '../comonents/Testimonial';
 import Article from '../comonents/Ariticle';
 import FAQ from '../comonents/FAQ';
+import Footer from '../comonents/Footer';
 
 function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,6 +30,7 @@ function Home() {
         <Testimonial />
         <Article />
         <FAQ />
+        <Footer />
     </>
   )
 }

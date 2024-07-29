@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import DoctorsSection from './DoctorsSection';
+import Header from '../navbar/Header';
+import Footer from '../comonents/Footer';
 
 const DoctorHeroSection = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -17,6 +19,7 @@ const DoctorHeroSection = () => {
 
   return (
     <>
+    <Header />
     <section className="relative w-full h-screen bg-gray-800 overflow-hidden">
       <div className="absolute inset-0">
         {isLoading ? (
@@ -51,6 +54,7 @@ const DoctorHeroSection = () => {
     </section>
 
     <DoctorsSection />
+    <Footer />
     </>
   );
 }

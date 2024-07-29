@@ -1,6 +1,8 @@
 import React,{useState,useEffect} from 'react'
 import AboutHeroSection from '../comonents/AboutHeroSection'
 import WelcomeUs from '../comonents/WelcomeUs';
+import Header from '../navbar/Header';
+import Footer from '../comonents/Footer';
 
 function About() {
     const [isLoading, setIsLoading] = useState(true);
@@ -11,6 +13,7 @@ function About() {
   }, []);
   return (
     <>
+    <Header />
         <div className="About">
       <AboutHeroSection
         isLoading={isLoading}
@@ -21,6 +24,8 @@ function About() {
       />
       </div>
       <WelcomeUs />
+
+      <Footer />
     </>
   )
 }

@@ -6,12 +6,14 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../styles/Department.css';
 import LatestBlog from './LatestBlog';
+import Header from '../navbar/Header';
+import Footer from '../comonents/Footer';
 
 const departments = [
   { name: "Cardiology", img: "https://i.pinimg.com/236x/5c/49/33/5c49337c9863e9a665c52d8d5bc5fcb6.jpg", description: "Heart care and surgery." },
   { name: "Neurology", img: "https://i.pinimg.com/474x/0e/66/8c/0e668c44e9c4f060ce6fea566165db71.jpg", description: "Brain and nervous system care." },
-  { name: "Pediatrics", img: "https://example.com/image3.jpg", description: "Child healthcare and treatment." },
-  { name: "Orthopedics", img: "https://example.com/image4.jpg", description: "Bone and joint care." }
+  { name: "Pediatrics", img: "https://i.pinimg.com/236x/16/f6/72/16f67298dd7c13c2050174d402e5ea88.jpg", description: "Child healthcare and treatment." },
+  { name: "Orthopedics", img: "https://i.pinimg.com/236x/9f/2b/6e/9f2b6ee2fa5ec261dd0a4157959480ad.jpg", description: "Bone and joint care." }
 ];
 
 const department = [
@@ -58,6 +60,7 @@ function Department() {
 
   return (
     <>
+    <Header />
     <section className="department-section">
       <div className="department-header mt-[4rem]">
         <h2 className='text-blue-700 font-bold uppercase'>Our Departments</h2>
@@ -109,6 +112,7 @@ function Department() {
     </section>
 
     <LatestBlog />
+    <Footer />
     </>
   );
 }
